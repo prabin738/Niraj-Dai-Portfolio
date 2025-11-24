@@ -1,145 +1,202 @@
-'use client'
-import { Autoplay, Navigation, Pagination } from "swiper/modules"
-import { Swiper, SwiperSlide } from "swiper/react"
+"use client";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import bgImg1 from "../../assets/images/shape/shape-5.png";
-import testimonialImage1 from '../../assets/images/resource/testimonial-1.jpg';
-import testimonialImage2 from '../../assets/images/resource/testimonial-1.png';
+import testimonialImage1 from "../../assets/images/resource/testimonial-1.jpg";
+import testimonialImage2 from "../../assets/images/resource/testimonial-1.png";
 
 const swiperOptions = {
-    modules: [Autoplay, Pagination, Navigation],
-    slidesPerView: 2,
-    spaceBetween: 30,
-    autoplay: {
-        delay: 7000,
-        disableOnInteraction: false,
-    },
-    loop: true,
+  modules: [Autoplay, Pagination, Navigation],
+  slidesPerView: 2,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: false,
+  },
+  loop: true,
 
-    // Navigation
-    navigation: {
-        nextEl: '.h1n',
-        prevEl: '.h1p',
-    },
+  // Navigation
+  navigation: {
+    nextEl: ".h1n",
+    prevEl: ".h1p",
+  },
 
-    // Pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+  // Pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 
-    breakpoints: {
-        320: {
-            slidesPerView: 1,
-            // spaceBetween: 30,
-        },
-        575: {
-            slidesPerView: 1,
-            // spaceBetween: 30,
-        },
-        767: {
-            slidesPerView: 1,
-            // spaceBetween: 30,
-        },
-        991: {
-            slidesPerView: 1,
-            // spaceBetween: 30,
-        },
-        1199: {
-            slidesPerView: 1,
-            // spaceBetween: 30,
-        },
-        1350: {
-            slidesPerView: 1,
-            // spaceBetween: 30,
-        },
-    }
-}
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      // spaceBetween: 30,
+    },
+    575: {
+      slidesPerView: 1,
+      // spaceBetween: 30,
+    },
+    767: {
+      slidesPerView: 1,
+      // spaceBetween: 30,
+    },
+    991: {
+      slidesPerView: 1,
+      // spaceBetween: 30,
+    },
+    1199: {
+      slidesPerView: 1,
+      // spaceBetween: 30,
+    },
+    1350: {
+      slidesPerView: 1,
+      // spaceBetween: 30,
+    },
+  },
+};
 export default function TestimonialSlider1() {
-    return (
-        <>
-            
-            {/* testimonial-section*/}
-            <section className="testimonial-section pt_150">
-                <div className="auto-container">
-                    <div className="row clearfix">
-                        <div className="col-lg-6 col-md-12 col-sm-12 content-column">
-                            <div className="content-box mr_40">
-                                <div className="sec-title mb_25">
-                                    <span className="sub-title">Testimonials</span>
-                                </div>
-                                <Swiper {...swiperOptions} className="theme_carousel owl-theme">
-                                    <SwiperSlide className="slide">
-                                    <div className="testimonial-block-one">
-                                        <div className="text-box pb_35 mb_35">
-                                            <div className="text">“The private investigator should provide value for the client investment. They should be cost-effective and efficient.”</div>
-                                            <ul className="rating clearfix">
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-18"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div className="author-box">
-                                            <figure className="thumb-box"><img src={testimonialImage2} alt="" /></figure>
-                                            <h3>Ronald Richards</h3>
-                                            <span className="designation">Service taker</span>
-                                        </div>
-                                    </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide className="slide">
-                                    <div className="testimonial-block-one">
-                                        <div className="text-box pb_35 mb_35">
-                                            <div className="text">“The private investigator should provide value for the client investment. They should be cost-effective and efficient.”</div>
-                                            <ul className="rating clearfix">
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-18"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div className="author-box">
-                                            <figure className="thumb-box"><img src={testimonialImage2} alt="" /></figure>
-                                            <h3>Ronald Richards</h3>
-                                            <span className="designation">Service taker</span>
-                                        </div>
-                                    </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide className="slide">
-                                    <div className="testimonial-block-one">
-                                        <div className="text-box pb_35 mb_35">
-                                            <div className="text">“The private investigator should provide value for the client investment. They should be cost-effective and efficient.”</div>
-                                            <ul className="rating clearfix">
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-19"></i></li>
-                                                <li><i className="icon-18"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div className="author-box">
-                                            <figure className="thumb-box"><img src={testimonialImage2} alt="" /></figure>
-                                            <h3>Ronald Richards</h3>
-                                            <span className="designation">Service taker</span>
-                                        </div>
-                                    </div>
-                                    </SwiperSlide>
-                                </Swiper>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-12 col-sm-12 image-column">
-                            <div className="image-box pr_50 pb_50 ml_40">
-                                <div className="image-shape rotate-me" style={{
-                            backgroundImage:`url(${bgImg1})`
-                        }}></div>
-                                <figure className="image"><img src={testimonialImage1} alt="" /></figure>
-                            </div>
-                        </div>
-                    </div>
+  return (
+    <>
+      {/* testimonial-section*/}
+      <section className="testimonial-section pt_150">
+        <div className="auto-container">
+          <div className="row clearfix">
+            <div className="col-lg-6 col-md-12 col-sm-12 content-column">
+              <div className="content-box mr_40">
+                <div className="sec-title mb_25">
+                  <span className="sub-title">Testimonials</span>
                 </div>
-            </section>
-            {/*testimonial-section end */}
-        </>
-    )
+                <Swiper {...swiperOptions} className="theme_carousel owl-theme">
+                  <SwiperSlide className="slide">
+                    <div className="testimonial-block-one">
+                      <div className="text-box pb_35 mb_35">
+                        <div className="text">
+                          “Niraj didn't just take photos; he captured the soul
+                          of our event. The cinematic video he produced is
+                          something we will cherish forever. He was
+                          professional, invisible during the ceremony, and
+                          incredibly creative with the final edit.”
+                        </div>
+                        <ul className="rating clearfix">
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-18"></i>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="author-box">
+                        <figure className="thumb-box">
+                          <img src={testimonialImage2} alt="" />
+                        </figure>
+                        <h3>Ronald Richards</h3>
+                        <span className="designation">Service taker</span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="slide">
+                    <div className="testimonial-block-one">
+                      <div className="text-box pb_35 mb_35">
+                        <div className="text">
+                          “The promotional video exceeded our expectations. He
+                          understood our brand vision immediately and delivered
+                          a final edit that has already boosted our engagement.
+                          Highly recommended for any business looking for
+                          top-tier visuals.”
+                        </div>
+                        <ul className="rating clearfix">
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-18"></i>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="author-box">
+                        <figure className="thumb-box">
+                          <img src={testimonialImage2} alt="" />
+                        </figure>
+                        <h3>Ronald Richards</h3>
+                        <span className="designation">Marketing Director</span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide className="slide">
+                    <div className="testimonial-block-one">
+                      <div className="text-box pb_35 mb_35">
+                        <div className="text">
+                          “I’m usually camera shy, but the session felt so
+                          relaxed and fun. The photos turned out stunning—the
+                          lighting and composition were perfect. I finally have
+                          professional headshots I’m proud to use.”
+                        </div>
+                        <ul className="rating clearfix">
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-19"></i>
+                          </li>
+                          <li>
+                            <i className="icon-18"></i>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="author-box">
+                        <figure className="thumb-box">
+                          <img src={testimonialImage2} alt="" />
+                        </figure>
+                        <h3>Ronald Richards</h3>
+                        <span className="designation">Service taker</span>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+              <div className="image-box pr_50 pb_50 ml_40">
+                <div
+                  className="image-shape rotate-me"
+                  style={{
+                    backgroundImage: `url(${bgImg1})`,
+                  }}
+                ></div>
+                <figure className="image">
+                  <img src={testimonialImage1} alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*testimonial-section end */}
+    </>
+  );
 }

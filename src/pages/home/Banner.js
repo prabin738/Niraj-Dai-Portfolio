@@ -106,8 +106,9 @@ function Banner() {
                 <h3>Discover The Truth</h3>
                 <h2>Private Investigation Services</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  ridiculus tellus elit turpis.
+                  A passionate individual with a deep enthusiasm for blending
+                  creativity and precision as a professional videographer and
+                  photographer.
                 </p>
                 <div className="btn-box">
                   <Link to="/" className="theme-btn btn-one">
